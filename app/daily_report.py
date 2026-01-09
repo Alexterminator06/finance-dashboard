@@ -41,3 +41,11 @@ def generate_daily_report(tickers=TICKERS):
     report_df.to_csv(filename, index=False)
     
     return report_df
+if __name__=="__main__":
+    print("--- Lancement du script de rapport ---")
+    try:
+        generated_df=generate_daily_report()
+        print("Rapport généré avec succès !")
+        print(generated_df.head())
+    except Exception as e:
+        print(f"Erreur critique : {e}")
