@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from datetime import datetime,timedelta
 import pandas as pd
-from app.common.metrics import sharpe_ratio,max_drawdown
+from common.metrics import sharpe_ratio,max_drawdown
 from modules.quant_a.strategies import (
     buy_and_hold,momentum,bollinger_bands_strategy,
     dual_sma_crossover,rsi_strategy
